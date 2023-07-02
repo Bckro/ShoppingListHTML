@@ -1,0 +1,238 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#add-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#add-form select,
+#add-form input[type="number"],
+#add-form input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#add-form button:hover {
+    background-color: #45a049;
+}
+
+.edit-button,
+.delete-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #fbc531;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #e1b12c;
+}
+
+#list-container {
+    margin-top: 40px;
+}
+
+#shopping-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.item label {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.item label.strikethrough {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.item .quantity {
+    font-size: 18px;
+    color: #888;
+}
+
+.item .price {
+    font-size: 18px;
+    color: #888;
+    margin-left: 10px;
+}
+
+#total {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Select Styling */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: url('arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 30px;
+}
+
+/* Select Hover Styling */
+select:hover {
+    border-color: #888;
+}
+
+/* Select Focus Styling */
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Select Option Styling */
+select option {
+    background-color: #fff;
+}
+
+/* Select Option Hover Styling */
+select option:hover {
+    background-color: #f2f2f2;
+}
+
+#add-form select {
+    flex-grow: 1;
+}
+
+#total {
+    text-align: right;
+}
+
+.edit-button-container,
+.delete-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-input {
+    font-family: 'Dancing Script', cursive;
+}
+
+.remove-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #FF0000; /* Zmieniony kolor na czerwony */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #DC0000; /* Kolor dla stanu hover */
+}
+
+.remove-button:focus {
+    outline: none;
+}
+
+.remove-button:active {
+    background-color: #B30000; /* Kolor dla stanu aktywnego */
+}
+
+
+.edit-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #fbc531;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #e1b12c;
+}
+
+.edit-button:focus {
+    outline: none;
+}
+
+.edit-button:active {
+    background-color: #d4a328;
+}
+
+#reset-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+#reset-button:hover {
+  color: #ff0000;
+}
+
+
